@@ -42,9 +42,14 @@
                                     </th>
                                     <td class="border-0 align-middle"><strong>{{ $product->model->getPrice() }}</strong>
                                     </td>
-                                    <td class="border-0 align-middle"><strong>3</strong></td>
-                                    <td class="border-0 align-middle"><a href="#" class="text-dark"><i
-                                                class="fa fa-trash"></i></a></td>
+                                    <td class="border-0 align-middle"><strong>13</strong></td>
+                                    <td class="border-0 align-middle">
+                                        <form action="{{ route('cart.destroy') }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="text-dark"><i class="fa fa-trash"></i></button>
+                                        </form>
+                                    </td>
                                 </tr>
 
                                 @endforeach
@@ -105,4 +110,5 @@
 <div class="col-12">
     <p>Votre panier est vide</p>
 </div>
+@endif
 @endsection
