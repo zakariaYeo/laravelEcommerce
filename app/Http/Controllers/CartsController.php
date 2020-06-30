@@ -93,6 +93,6 @@ class CartsController extends Controller
     public function destroy($rowId)
     {
         Cart::remove($rowId);
-        return back()->with('success','Le produit a été supprimé.')
+        return back()->with('success','Le produit a été supprimé.');
     }
 }
