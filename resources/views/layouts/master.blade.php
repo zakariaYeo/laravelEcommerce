@@ -271,6 +271,7 @@
         </style>
         <!-- Custom styles for this template -->
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+        @yield('extra_script')
     </head>
 
     <body>
@@ -300,7 +301,7 @@
                     </div>
                 </div>
             </header>
-
+{{-- 
             <div class="nav-scroller py-1 mb-2">
                 <nav class="nav d-flex justify-content-between">
                     <a class="p-2 text-muted" href="#">World</a>
@@ -316,7 +317,7 @@
                     <a class="p-2 text-muted" href="#">Style</a>
                     <a class="p-2 text-muted" href="#">Travel</a>
                 </nav>
-            </div>
+            </div> --}}
 
             @if(session('success'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -491,6 +492,7 @@
             </div>
 
         </footer>
+        @yield('extra_js')
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
@@ -500,6 +502,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
         </script>
+
     </body>
 
 </html>
