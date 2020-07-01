@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title', 'Boutique')
 @section('content')
 @foreach ($products as $product)
 <div class="col-md-6">

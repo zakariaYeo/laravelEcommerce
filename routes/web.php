@@ -14,3 +14,6 @@ Route::get('boutique/{slug}','ProductsController@show')->name('products.show');
 Route::get('panier','CartsController@index')->name('cart.index');
 Route::post('panier/ajouter','CartsController@store')->name('cart.store');
 Route::delete('panier/{rowId}','CartsController@destroy')->name('cart.destroy');
+
+/* Checkout route */
+Route::get('paiement','CheckoutsController@index')->name('checkout.index');

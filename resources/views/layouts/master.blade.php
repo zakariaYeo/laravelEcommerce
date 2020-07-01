@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <meta name="generator" content="Jekyll v4.0.1">
-        <title>Blog Template · Bootstrap</title>
+        <title>@yield('title')</title>
 
         <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/">
 
@@ -282,7 +282,9 @@
                                 class="badge badge-pill badge-dark">{{ Cart::count() }}</span></a>
                     </div>
                     <div class="col-4 text-center">
-                        <a class="blog-header-logo text-dark" href="{{ route('products.index') }}">E-commerce</a>
+                        <a class="blog-header-logo text-dark" href="{{ route('products.index') }}">
+                            <h1>Ecommerce</h1>
+                        </a>
                     </div>
                     <div class="col-4 d-flex justify-content-end align-items-center">
                         <a class="text-muted" href="#" aria-label="Search">
@@ -324,14 +326,14 @@
                 </button>
             </div>
             @endif
-            <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+            {{-- <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
                 <div class="col-md-6 px-0">
                     <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
                     <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and
                         efficiently about what’s most interesting in this post’s contents.</p>
                     <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
                 </div>
-            </div>
+            </div> --}}
 
             <div class="row mb-2">
                 @yield('content')
@@ -479,12 +481,15 @@
 
         </main><!-- /.container --> --}}
 
-        <footer class="blog-footer">
-            <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
-                    href="https://twitter.com/mdo">@mdo</a>.</p>
-            <p>
-                <a href="#">Back to top</a>
-            </p>
+        <footer class="row blog-footer">
+            <div class="col-md-6 offset-md-3">
+                <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
+                        href="https://twitter.com/mdo">@mdo</a>.</p>
+                <p>
+                    <a href="#">Back to top</a>
+                </p>
+            </div>
+
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
