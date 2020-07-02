@@ -17,3 +17,7 @@ Route::delete('panier/{rowId}','CartsController@destroy')->name('cart.destroy');
 
 /* Checkout route */
 Route::get('paiement','CheckoutsController@index')->name('checkout.index');
+Route::post('paiement','CheckoutsController@store')->name('checkout.store');
+Route::get('thanks', function(){
+    return view('checkout.thanks');
+});

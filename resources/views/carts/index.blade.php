@@ -71,7 +71,7 @@
                             <input type="text" placeholder="Apply coupon" aria-describedby="button-addon3"
                                 class="form-control border-0">
                             <div class="input-group-append border-0">
-                                <button id="button-addon3" type="button" class="btn btn-dark px-4 rounded-pill"><i
+                                <button id="button-addon3" type="button" class="btn btn-info px-4 rounded-pill"><i
                                         class="fa fa-gift mr-2"></i>Apply coupon</button>
                             </div>
                         </div>
@@ -103,7 +103,7 @@
                                 <h5 class="font-weight-bold">{{ getPrice(Cart::total()) }}</h5>
                             </li>
                         </ul><a href="{{ route('checkout.index') }}"
-                            class="btn btn-dark rounded-pill py-2 btn-block">Passer à la caisse</a>
+                            class="btn btn-info rounded-pill py-2 btn-block">Passer à la caisse</a>
                     </div>
                 </div>
             </div>

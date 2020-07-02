@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <meta name="generator" content="Jekyll v4.0.1">
+        @yield('extra_meta')
         <title>@yield('title')</title>
 
         <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/">
@@ -284,7 +285,7 @@
                     </div>
                     <div class="col-4 text-center">
                         <a class="blog-header-logo text-dark" href="{{ route('products.index') }}">
-                            <h1>Ecommerce</h1>
+                            <h1>🛍️ E-Commerce</h1>
                         </a>
                     </div>
                     <div class="col-4 d-flex justify-content-end align-items-center">
@@ -301,7 +302,7 @@
                     </div>
                 </div>
             </header>
-{{-- 
+            {{--
             <div class="nav-scroller py-1 mb-2">
                 <nav class="nav d-flex justify-content-between">
                     <a class="p-2 text-muted" href="#">World</a>
@@ -482,16 +483,17 @@
 
         </main><!-- /.container --> --}}
 
-        <footer class="row blog-footer">
-            <div class="col-md-6 offset-md-3">
-                <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
-                        href="https://twitter.com/mdo">@mdo</a>.</p>
-                <p>
-                    <a href="#">Back to top</a>
-                </p>
+        <!-- Footer -->
+        <footer style="background: #ddd">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://mdbootstrap.com/">🛍️ E-Commerce</a>
             </div>
+            <!-- Copyright -->
 
         </footer>
+        <!-- Footer -->
         @yield('extra_js')
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

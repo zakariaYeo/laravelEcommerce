@@ -12,7 +12,7 @@
             <strong class="card-text mb-auto">{{ $product->getPrice() }}
             </strong>
 
-            <a href="{{ route('products.show', $product->slug) }}" class="btn btn-info">Voir
+            <a href="{{ route('products.show', $product->slug) }}" class="btn btn-info mt-2">Voir
                 l'article</a>
         </div>
         <div class="col-auto d-none d-lg-block">
